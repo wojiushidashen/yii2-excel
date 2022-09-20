@@ -1,0 +1,20 @@
+{
+    "name": "ezijing/yii2-excel",
+    "description": "yii2 excel工具包",
+    "autoload": {
+        "psr-4": {
+            "Ezijing\\Yii2Excel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yizheng Wang",
+            "email": "18435134258@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "phpoffice/phpspreadsheet": "^1.22"
+    }
+}
