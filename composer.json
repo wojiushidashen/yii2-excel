@@ -1,6 +1,13 @@
 {
     "name": "ezijing/yii2-excel",
     "description": "yii2 excel工具包",
+    "homepage": "https://github.com/wojiushidashen/yii2-excel",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "yii2",
+        "excel"
+    ],
     "autoload": {
         "psr-4": {
             "Ezijing\\Yii2Excel\\": "src/"
@@ -14,7 +21,10 @@
     ],
     "require": {
         "php": ">=7.0",
-        "ext-json": "*",
         "phpoffice/phpspreadsheet": "^1.22"
-    }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
 }
