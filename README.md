@@ -12,7 +12,7 @@ declare(strict_types=1);
 
 return [
     'components' => [
-        'excel' => 'components\excel\Excel',
+        'excel' => 'Ezijing\Yii2Excel\Excel',
     ],
 ];
 ```
