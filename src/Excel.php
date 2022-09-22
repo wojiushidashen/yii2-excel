@@ -503,7 +503,7 @@ class Excel extends Component implements ExcelInterface
         }
         $model = new UploadForm();
         $model->file = UploadedFile::getInstance($model, 'file');
-        if (! $model->file || ! $model->validate()) {
+        if (! $model->file) {
             throw new ExcelException(\Yii::t('app', '导入文件失败'), ErrorCode::FAILED_TO_IMPORT_FILES_PROCEDURE);
         }
 
