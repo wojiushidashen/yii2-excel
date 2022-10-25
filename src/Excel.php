@@ -504,12 +504,12 @@ class Excel extends Component implements ExcelInterface
         $model = new UploadForm();
         $model->file = UploadedFile::getInstance($model, 'file');
         if (! $model->file) {
-            throw new ExcelException(\Yii::t('app', '导入文件失败'), ErrorCode::FAILED_TO_IMPORT_FILES_PROCEDURE);
+            throw new ExcelException(\Yii::t('app', sprintf('导入文件失败')), ErrorCode::FAILED_TO_IMPORT_FILES_PROCEDURE);
         }
 
         // 获取文件上传的临时文件
         if (! isset($model->file->tempName)) {
-            throw new ExcelException(\Yii::t('app', '导入文件失败'), ErrorCode::FAILED_TO_IMPORT_FILES_PROCEDURE);
+            throw new ExcelException(\Yii::t('app', '导入文件失败, 找不到临时目录！'), ErrorCode::FAILED_TO_IMPORT_FILES_PROCEDURE);
         }
 
         return $model->file;
